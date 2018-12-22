@@ -18,7 +18,7 @@ Schema members have `.authorized?(value, context)` methods which will be called 
 
 These methods are called with:
 
-- `value`: the object from your application which was returned from a field
+- `object`: the object from your application which was returned from a field
 - `context`: the query context, based on the hash passed as `context:`
 
 When you implement this method to return `false`, the query will be halted, for example:
